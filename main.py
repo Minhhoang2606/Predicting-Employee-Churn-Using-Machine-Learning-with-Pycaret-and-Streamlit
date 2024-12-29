@@ -96,6 +96,7 @@ tuned_model = tune_model(best_model)
 # Evaluate the model
 plot_model(tuned_model, plot='confusion_matrix')
 plot_model(tuned_model, plot='feature')
+plot_model(tuned_model, plot='auc')
 
 # Finalize the model
 final_model = finalize_model(tuned_model)
